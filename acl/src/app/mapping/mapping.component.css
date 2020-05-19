@@ -1,0 +1,46 @@
+.matcard
+{
+	width: 350px;
+	/*padding-top: 100px;*/
+	background-color: rgb(157, 206, 237);
+}
+
+.post-card
+{
+	/*padding: 20px;*/
+	height: 350px;
+	width: 500px;
+	/*background-color: rgb(237, 240, 245);*/
+	/*background-color: rgb(157, 206, 237);*/
+}
+
+.post
+{
+	background-color: rgb(157, 206, 237);
+	height: 100px;
+	width: 1000px;
+}
+
+.input
+{
+	width: 50px;
+}
+
+.icons
+{
+	padding-bottom: 100px;	
+}
+
+.material-icons
+{
+	/*padding-bottom: 30px;*/
+}
+
+.get
+{
+	background-color:rgb(9, 45, 227);
+	height: 30px;
+	width: 50px;	
+	color: white;
+	font-size: 10px;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+}

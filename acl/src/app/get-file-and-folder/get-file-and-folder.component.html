@@ -1,0 +1,75 @@
+<!-- 
+<div class="col">
+  <div  class = "row-6">
+    <form (submit)="getValue()">
+    <div align="center" style="padding: 10px">
+      <mat-card  class="post-card">
+        <div class="col">
+
+            
+          <div class="row-12">
+            <mat-form-field>
+                <input matInput [(ngModel)]="filefolderPath" name="filefolderPath" placeholder="Enter The Path To Get Detail">
+             </mat-form-field>
+          </div>
+
+        </div>
+
+        <div class="row" >
+          <div class="col-6" style="padding: 15px">
+            <button mat-button class="get" type="reset">RESET</button>
+          </div>
+          <div class="col-6" style="padding: 15px">
+            <button mat-button class="get"  type="submit">SUBMIT</button>
+          </div>
+
+        </div>
+      </mat-card>
+    </div>
+  </form>
+  </div> -->
+  <!-- <div class = "row-6"> -->
+    <div class="row" align="center">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="filePath">
+          <th mat-header-cell *matHeaderCellDef> filePath </th>
+          <td mat-cell *matCellDef="let element"> {{element.filePath}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="fileName">
+          <th mat-header-cell *matHeaderCellDef> fileName </th>
+          <td mat-cell *matCellDef="let element"> {{element.fileName}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="FileOrDirectory">
+          <th mat-header-cell *matHeaderCellDef> FileOrDirectory </th>
+          <td mat-cell *matCellDef="let element"> {{element.FileOrDirectory}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="Id">
+          <th mat-header-cell *matHeaderCellDef> Id </th>
+          <td mat-cell *matCellDef="let element"> {{element.Id}} </td>
+        </ng-container>
+
+
+         <ng-container matColumnDef="permission">
+          <th mat-header-cell *matHeaderCellDef> permission </th>
+          <td mat-cell *matCellDef="let element;let i=index"> <button (click)="changePermission(i)">{{element.permission}}</button></td>
+        </ng-container>
+
+        <ng-container matColumnDef="operation">
+          <th mat-header-cell *matHeaderCellDef> operation </th>
+          <td mat-cell *matCellDef="let element;let i = index"><span class="material-icons" (click) ='performOperation(i)'>{{element.operation}}</span></td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  <!-- </div> -->
+<!-- </div> -->
+

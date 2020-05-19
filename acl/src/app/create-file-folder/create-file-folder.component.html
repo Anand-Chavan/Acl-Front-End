@@ -1,0 +1,43 @@
+
+<div align="center">
+	<mat-card class="matcard"><b style="font-size: 20px;color: blue">Create File Folder</b></mat-card>
+</div>
+
+<form (submit)="getValue()">
+	<div align="center" style="padding: 10px">
+		<mat-card  class="post-card">
+			<div class="col">
+
+				<div class="row-4">
+					<mat-form-field class="input">
+					    <input matInput  [(ngModel)]="filefolderPath" name="filefolderPath" placeholder="Enter The path of file/folder">
+					 </mat-form-field>
+				</div>
+					
+				<div class="row-4">
+					<mat-form-field class="input">
+					    <input matInput [(ngModel)]="filefolderName" name="filefolderName" placeholder="Enter The name of file/folder">
+					 </mat-form-field>
+				</div>
+
+				<div class="row-4">
+					<mat-form-field class="input">
+					    <input matInput  [(ngModel)]="filesOrFolderId" name="filesOrFolderId" placeholder="Enter The (d/f))">
+					 </mat-form-field>
+				</div>
+
+
+			</div>
+
+			<div class="row" >
+				<div class="col-6" style="padding: 15px">
+					<button mat-button class="get" type="reset">RESET</button>
+				</div>
+				<div class="col-6" style="padding: 15px">
+					<button mat-button class="get"  type="submit">SUBMIT</button>
+				</div>
+
+			</div>
+		</mat-card>
+	</div>
+</form>
